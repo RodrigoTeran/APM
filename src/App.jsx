@@ -81,10 +81,40 @@ const App = () => {
               img='img-post-11'
             >
               <div className='title-des-special'>
-                bla bla bla
+                My own ideas
               </div>
-              <div className='title-des' style={{ marginBottom: '30px' }}>
-                bla bla bla
+              <div className='title-des' style={{ marginBottom: '10px' }}>
+                My perspective of culture definitely changed a lot throughout this class. I thought that if I want to accept a culture, I just only need compassion and empathy but now that is not really important when accepting a culture.
+                <br />
+                <br />
+                The main way of accepting a culture is to understand why and how really is their culture; how they think and why they think like that; how they act and why they act like that; what are their values and why does their values are like that.
+                <br />
+                <br />
+                Attempting this is to understand different types of approaching a problem like multiculturalism, because some people think that is a problem some people think that it's perfect for the future and in this class I need to criticize both opinions.
+                <br />
+                <br />
+                I need to put in the shoes from different perspectives and this really helped me to analyze each proposals and then to conclude that in my opinion multiculturalism is a very important thing and is going to come and we cannot stop it.
+                <br />
+                <br />
+                I think multiculturalism is a way of representing the human as a whole because that is our specie, the human being. There are not only humans from Africa, humans of USA, of Mexico, etc. We are only a race called human beings and we all have human rights and we all have the right to stablish in whatever area we want of territory are will have the rights to keep our culture, our traditions, we can respect that and we need to understand different cultures. We need to keep many things that are good for us from a different culture like a melting pot; like in the USA, that is also good because when you combine different cultures you get the best part of each culture and that is not a bad idea.
+              </div>
+              <div className='title-des-special'>
+                Class reflection
+              </div>
+              <div className='title-des' style={{ marginBottom: '80px' }}>
+                I really like this class because it taught me how to understand a different way of thinking that mine. There are a lot of classes that teach how many different ways of thinking they are an that doesn´t help to accept them.
+                <br />
+                <br />
+                This class has I think 1 main base learning. That is the developing on our way of analyzing problems because society has a lot of problems. The human is a very complex system and this class avoid the classic way of approaching problems. This class help us to realize that the problems have a meaning from every single person.
+                <br />
+                <br />
+                A person from another country keeps a meaning from a specific problem and I keep a meaning from that specific problem, with a different perspective; and perspectives are very important for multiculturalism.
+                <br />
+                <br />
+                There are different problems; there are different perspectives; there are different cultures, and we all need results, we all need this human right to be applied for everyone.
+                <br />
+                <br />
+                So, for conclusion this class has a lot of meaning in our way of developing on ourselves.
               </div>
             </Post>
             <Post
@@ -107,22 +137,22 @@ const App = () => {
                 I dont love the idea of only having to compete with Mexican people. I like to know other cultures and be with really smart and outstanding people.
               </div>
               <div className='title-des-special'>
-              I am a person that wants to learn a lot in his life. So, how can I learn if a avoid multiculturalism?
+                I am a person that wants to learn a lot in his life. So, how can I learn if a avoid multiculturalism?
               </div>
               <div className='title-des' style={{ marginBottom: '10px' }}>
                 So, I respect every kind of thinking of any other culture.
-                <br/>
-                <br/>
+                <br />
+                <br />
                 Then, I believe that all human rights are for everyone... and this sound trivial, but there are people that does not know
                 what "human" is...
-                <br/>
-                <br/>
+                <br />
+                <br />
                 We are all human, a poor homeless Indian child is human, a rich and white boy in Los Angeles is human. All the humans are "humans".
                 Because we are all part of a society we need to respect each other.
                 Once I heard a friend that ask me this: "Why do I need to take ethics if I stydu engineering?"
                 And I said: "Because we live in a society..."
-                <br/>
-                <br/>
+                <br />
+                <br />
                 We cannot only focus in material things. We need to focus in every single detail in our lives.
                 Now, multiculturalism has a part in human rights. We all have the right to move to another country.
               </div>
