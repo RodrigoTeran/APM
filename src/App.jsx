@@ -7,7 +7,7 @@ import ButtonMenu from './components/Buttons/ButtonMenu';
 import CardRoutine from './components/CardRoutine';
 
 const App = () => {
-  const [start, setStart] = useState(true);
+  const [start, setStart] = useState(false);
   const openBlog = () => {
     setStart(true);
   };
