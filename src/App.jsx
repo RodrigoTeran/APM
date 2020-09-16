@@ -7,7 +7,7 @@ import ButtonMenu from './components/Buttons/ButtonMenu';
 import CardRoutine from './components/CardRoutine';
 
 const App = () => {
-  const [start, setStart] = useState(false);
+  const [start, setStart] = useState(true);
   const openBlog = () => {
     setStart(true);
   };
@@ -408,6 +408,27 @@ const App = () => {
                 because of their culture, their language accent.
               </div>
             </Post>
+            <Post
+              date='16/09/2020'
+              title='MULTICULTURAL AGENTS AND PERSPECTIVES REFLECTION'
+            >
+              <div className='title-des-special'>
+                What I have learned?
+              </div>
+              <div className='title-des' style={{ marginBottom: '80px' }}>
+                I am very surprised about what we have learned.
+                <br/>
+                <br/>
+                Because I never asked to myself "What I am?" or "Are we human?"
+                <br/>
+                <br/>
+                The classes are full with participation and I like to share my ideas.
+                <br/>
+                <br/>
+                Definitely a class that today is very important to have. It is important to develop critical thinking
+                and identity.
+              </div>
+            </Post>       
           </div>
           <div className={`col-lg-5 col-md-12 col-sm-12 col-header col-header-2 ${fixedCol ? ("fixed") : ("")}`}>
             <div className='about-me'>About Me</div>
