@@ -77,35 +77,57 @@ const App = () => {
                 I WAS GIVEN MY NAME BECAUSE  . . .
               </div>
               <div className='title-des' style={{ marginBottom: '20px' }}>
-                My name was never to hard to decide for my parents. They always knew that they wanted to have a boy named Rodrigo
+                My name was never to hard to decide for my parents. They always knew that they wanted to have a boy named Rodrigo.
+                They always had like that name.
+                My name means "fame, glory and reiks. Mighty, rich"
               </div>
-              <img src="Images/meaning.jpg" className='img-post' alt="Img Post" />
+              <img src="Images/rodrigo.jpg" className='img-post' alt="Img Post" />
               <div className='title-des-special'>
                 I LIKE MY NAME BECAUSE . . .
               </div>
-              <div className='title-des'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
+              <div className='title-des' style={{ marginBottom: '20px' }}>
+                My name is not that long, but also is not super short.
+                I really like my name because it sounds discrete, but also realistic.
+                I think it is an original name.
               </div>
-              {/*
-                <div className='title-des-special'>
-                  MY NAME IS A GOOD FIT FOR MY PERSONALITY BECAUSE ...
+              <img src="Images/meaning.jpg" className='img-post' alt="Img Post" />
+              <div className='title-des-special'>
+                MY NAME IS A GOOD FIT FOR MY PERSONALITY BECAUSE ...
                 </div>
-                <div className='title-des' style={{ marginBottom: '10px' }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
-                </div>
-                <div className='title-des-special'>
-                  WHEN SOMEONE MAKES AN ASSUMPTION . . .
-                </div>
-                <div className='title-des' style={{ marginBottom: '10px' }}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
-                </div>
-                <div className='title-des-special'>
-                  WHEN MY NAME AFFECTED ME . . .
-                </div>
-                <div className='title-des'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
-                </div>
-              */}
+              <div className='title-des' style={{ marginBottom: '20px' }}>
+                I dont think my name is totally opposite of my personality but also not as the way I am.
+                Sometimes I dont know if this is the way a Rodrigo should be/act. But there are situations where I think it fits really well
+                my personality.
+              </div>
+              <img src="Images/person.jpg" className='img-post' alt="Img Post" />
+              <div className='title-des' style={{ marginBottom: '10px', marginTop: '20px' }}>
+                Rodrigo fits my creativity, logic and originality. I dont like to be super showy, but also not too much discrete.
+              </div>
+              <div className='title-des-special'>
+                WHEN SOMEONE MAKES AN ASSUMPTION . . .
+              </div>
+              <div className='title-des' style={{ marginBottom: '20px' }}>
+                When someone makes an assumption of my personality based on my name it is very usual that they are right.
+                There are people that had told me that because they heard thay I was named Rodrigo, they started to talk to me.
+                They said that Rodrigo sounds like a very friendly name.
+              </div>
+              <img src="Images/friends.png" className='img-post' alt="Img Post" style={{ width: '100%' }} />
+              <div className='title-des' style={{ marginBottom: '10px', marginTop: '20px' }}>
+                A friend that I had when I swam in a team told me that for him the people named Rodrigo were super
+                kind and friendly.
+                We were so good friends.
+              </div>
+              <div className='title-des-special'>
+                WHEN MY NAME AFFECTED ME . . .
+              </div>
+              <div className='title-des' style={{ marginBottom: "30px" }}>
+                I dont remember that my name had affected me. But that does not means that it has not already done it.
+                Maybe like my friend in the swimming team, but in an opposite situation.
+              </div>
+              <img src="Images/perder.png" className='img-post' alt="Img Post" />
+              <div className='title-des' style={{ marginTop: '30px' }}>
+                What if I hadn't met someone really friendly because they think that Rodrigo's are aggressive and unfriendly?
+              </div>
             </Post>
             <Post
               date='15/09/2020'
@@ -116,7 +138,30 @@ const App = () => {
                 THIS IS ME IN A PICTURE
               </div>
               <div className='title-des'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
+                This selfie represents all what I am:
+                <ul>
+                  <li>
+                    My Identity
+                  </li>
+                  <li>
+                    My gender
+                  </li>
+                  <li>
+                    My religion
+                  </li>
+                  <li>
+                    My name
+                  </li>
+                  <li>
+                    Me and the others.
+                  </li>
+                  <li>
+                    My choices
+                  </li>
+                  <li>
+                    What I LIKE
+                  </li>
+                </ul>
               </div>
             </Post>
             <Post
