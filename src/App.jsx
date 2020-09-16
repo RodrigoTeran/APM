@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 // Components
 import Header from './components/Header';
 import Post from './components/Post';
+import ButtonMenu from './components/Buttons/ButtonMenu';
 
 const App = () => {
   const [start, setStart] = useState(false);
@@ -14,8 +15,10 @@ const App = () => {
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
     };
   });
   const getTop = (component) => {	// Función que calcula la distancia que existe de un componente y hasta arriba de la página
@@ -24,15 +27,19 @@ const App = () => {
   const [fixedCol, setFixedCol] = useState(false);
   const handleScroll = () => {
     if (fixedCol) {
-      if (document.scrollingElement.scrollTop <= 150) {
+      if (document.scrollingElement.scrollTop <= 252) {
         setFixedCol(false);
       };
     } else {
-      if (getTop('.col-header-2') <= document.scrollingElement.scrollTop + 50) {
+      // 171
+      if (getTop('.col-header-2') < document.scrollingElement.scrollTop + 50) {
         setFixedCol(true);
       };
     };
   };
+  const putScroll = (component) => {
+    window.scroll({ top: getTop(component) - 100, left: 0, behavior: 'smooth' });
+  }
   return (
     <div>
       <Header openBlog={openBlog}></Header>
@@ -47,25 +54,109 @@ const App = () => {
         )}
       <div className={`${start ? ('open') : ('closed')} blog`}>
         <div className='arrow' onClick={closeBlog}>
-          <svg width='30px' height='30px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z" /></svg>
+          <svg width='20px' height='20px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z" /></svg>
         </div>
         <div className='rodrigo'>
           RODRIGO TERÁN HERNÁNDEZ
         </div>
+        <div className='menu row justify-content-center align-items-center'>
+          <ButtonMenu clickFunction={() => { putScroll('.img-post-1') }} text='MEANING OF MY NAME'></ButtonMenu>
+          <ButtonMenu clickFunction={() => { putScroll('.img-post-2') }} text='SELFIE AND IDENTITY'></ButtonMenu>
+          <ButtonMenu clickFunction={() => { putScroll('.img-post-3') }} text='IDENTITY AND CHOICES'></ButtonMenu>
+          <ButtonMenu clickFunction={() => { putScroll('.img-post-4') }} text='I AM MOVIE REFLECTION '></ButtonMenu>
+          <ButtonMenu clickFunction={() => { putScroll('.img-post-5') }} text='CULTURAL CHELLENGES'></ButtonMenu>
+        </div>
         <div className='row row-header'>
-          <div className="col-lg-6 col-md-12 col-sm-12 col-header col-header-1">
+          <div className="col-lg-7 col-md-12 col-sm-12 col-header col-header-1">
             <Post
               date='15/09/2020'
               title='THE MEANING OF MY NAME'
-              des='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti mollitia et recusandae dolorum, quibusdam nemo tempora delectus quae harum temporibus deserunt sequi iure aliquam est quo repellendus ratione? Sit ratione voluptates eaque tenetur quod quasi nam optio excepturi cumque deleniti unde magni ut velit culpa quam, fuga nulla iste assumenda reiciendis amet laborum dignissimos quia asperiores? Laboriosam ipsum eaque aliquam nobis, quia nostrum fuga officia quam, eius porro, vel veritatis ea sit temporibus. Laudantium consequuntur natus facilis minus ducimus sint numquam sit. Illum hic odit labore necessitatibus aut, consequatur, assumenda, asperiores deserunt alias reiciendis beatae sint error nesciunt suscipit iusto.'
-            ></Post>
+              img='img-post-1'
+            >
+              <div className='title-des-special'>
+                I WAS GIVEN MY NAME BECAUSE  . . .
+              </div>
+              <div className='title-des' style={{ marginBottom: '20px' }}>
+                My name was never to hard to decide for my parents. They always knew that they wanted to have a boy named Rodrigo
+              </div>
+              <img src="Images/meaning.jpg" className='img-post' alt="Img Post" />
+              <div className='title-des-special'>
+                I LIKE MY NAME BECAUSE . . .
+              </div>
+              <div className='title-des'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
+              </div>
+              {/*
+                <div className='title-des-special'>
+                  MY NAME IS A GOOD FIT FOR MY PERSONALITY BECAUSE ...
+                </div>
+                <div className='title-des' style={{ marginBottom: '10px' }}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
+                </div>
+                <div className='title-des-special'>
+                  WHEN SOMEONE MAKES AN ASSUMPTION . . .
+                </div>
+                <div className='title-des' style={{ marginBottom: '10px' }}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
+                </div>
+                <div className='title-des-special'>
+                  WHEN MY NAME AFFECTED ME . . .
+                </div>
+                <div className='title-des'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
+                </div>
+              */}
+            </Post>
             <Post
               date='15/09/2020'
-              title='THE MEANING OF MY NAME'
-              des='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti mollitia et recusandae dolorum, quibusdam nemo tempora delectus quae harum temporibus deserunt sequi iure aliquam est quo repellendus ratione? Sit ratione voluptates eaque tenetur quod quasi nam optio excepturi cumque deleniti unde magni ut velit culpa quam, fuga nulla iste assumenda reiciendis amet laborum dignissimos quia asperiores? Laboriosam ipsum eaque aliquam nobis, quia nostrum fuga officia quam, eius porro, vel veritatis ea sit temporibus. Laudantium consequuntur natus facilis minus ducimus sint numquam sit. Illum hic odit labore necessitatibus aut, consequatur, assumenda, asperiores deserunt alias reiciendis beatae sint error nesciunt suscipit iusto.'
-            ></Post>
+              title='Selfie and Identity'
+              img='img-post-2'
+            >
+              <div className='title-des-special'>
+                THIS IS ME IN A PICTURE
+              </div>
+              <div className='title-des'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
+              </div>
+            </Post>
+            <Post
+              date='16/09/2020'
+              title='Identity and choices'
+              img='img-post-3'
+            >
+              <div className='title-des-special'>
+                MY SCHOOL-DAY MORNING ROUTINE
+              </div>
+              <div className='title-des'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
+              </div>
+            </Post>
+            <Post
+              date='16/09/2020'
+              title='I am Movie Reflection'
+              img='img-post-4'
+            >
+              <div className='title-des-special'>
+                WHATS WRONG WITH THE WORLD? . . .
+              </div>
+              <div className='title-des'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
+              </div>
+            </Post>
+            <Post
+              date='16/09/2020'
+              title='Cultural Challenges Reflection'
+              img='img-post-5'
+            >
+              <div className='title-des-special'>
+                WHAT CULTURAL CHELLENGES I HAVE EXPERIENCED? . . .
+              </div>
+              <div className='title-des'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
+              </div>
+            </Post>
           </div>
-          <div className={`col-lg-6 col-md-12 col-sm-12 col-header col-header-2 ${fixedCol ? ("fixed") : ("")}`}>
+          <div className={`col-lg-5 col-md-12 col-sm-12 col-header col-header-2 ${fixedCol ? ("fixed") : ("")}`}>
             <div className='about-me'>About Me</div>
             <div>
               <img src="Images/fotomia.png" alt="Rodrigo" className='fotomia' />

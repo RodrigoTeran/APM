@@ -3,8 +3,8 @@ import React from 'react';
 const Post = ({
   title,
   date,
-  des,
-  img
+  img,
+  children
 }) => {
   return (
     <>
@@ -14,10 +14,8 @@ const Post = ({
       <div className='title-post' style={{ textAlign: 'center' }}>
         {title}
       </div>
-      <div className='img-post-1'></div>
-      <div className='title-des'>
-        {des}
-      </div>
+      <div className={`${img}`}></div>
+      {children}
     </>
   );
 };
