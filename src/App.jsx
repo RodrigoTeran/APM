@@ -4,9 +4,10 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Post from './components/Post';
 import ButtonMenu from './components/Buttons/ButtonMenu';
+import CardRoutine from './components/CardRoutine';
 
 const App = () => {
-  const [start, setStart] = useState(false);
+  const [start, setStart] = useState(true);
   const openBlog = () => {
     setStart(true);
   };
@@ -31,7 +32,6 @@ const App = () => {
         setFixedCol(false);
       };
     } else {
-      // 171
       if (getTop('.col-header-2') < document.scrollingElement.scrollTop + 50) {
         setFixedCol(true);
       };
@@ -137,7 +137,7 @@ const App = () => {
               <div className='title-des-special'>
                 THIS IS ME IN A PICTURE
               </div>
-              <div className='title-des'>
+              <div className='title-des' style={{ marginBottom: "0px" }}>
                 This selfie represents all what I am:
                 <ul>
                   <li>
@@ -163,6 +163,23 @@ const App = () => {
                   </li>
                 </ul>
               </div>
+              <div className='title-des' style={{ marginTop: "20px" }}>
+                This selfie represents all what I am:
+                <ul>
+                  <li>
+                    The computer represents my love for technology.
+                  </li>
+                  <li>
+                    The books represent my love for studying and reading.
+                  </li>
+                  <li>
+                    The light bulb represents that I like to generate ideas and I am an entrepreneur.
+                  </li>
+                  <li>
+                    The Boxing gloves represent my love for martial arts and sports.
+                  </li>
+                </ul>
+              </div>
             </Post>
             <Post
               date='16/09/2020'
@@ -172,8 +189,88 @@ const App = () => {
               <div className='title-des-special'>
                 MY SCHOOL-DAY MORNING ROUTINE
               </div>
-              <div className='title-des'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
+              <div className='title-des' style={{ marginBottom: '10px' }}>
+                I am going to evaluate my daily choices and how people affected
+                them...
+                <br />
+                Scale:
+                <br />
+                <ul>
+                  <li>
+                    1 = choice based solely on personal desires and wishes
+                  </li>
+                  <li>
+                    10 = choice based entirely on what other people thin
+                  </li>
+                </ul>
+                <br />
+                This is my morning routine:
+                (COVID-19 edition)
+                <div className='row justify-content-left align-items-center d-flex' style={{ marginTop: "40px" }}>
+                  <CardRoutine time='6:50' text='I wake up' scale='1'></CardRoutine>
+                  <CardRoutine time='7:00' text='I wash my face' scale='1'></CardRoutine>
+                  <CardRoutine time='7:05' text='I feed up my pets' scale='3'></CardRoutine>
+                  <CardRoutine time='7:15' text='I take breakfast' scale='1'></CardRoutine>
+                  <CardRoutine time='7:45' text='I hear to my favorite songs' scale='1'></CardRoutine>
+                  <CardRoutine time='7:55' text='I prepare to take the first class' scale='5'></CardRoutine>
+                  <CardRoutine time='8:00' text='I take classes' scale='10'></CardRoutine>
+                  <CardRoutine time='11:00' text='I finish the first block of classes' scale='10'></CardRoutine>
+                  <CardRoutine time='11:05' text='I code my new App that uses AI' scale='1'></CardRoutine>
+                  <CardRoutine time='12:00' text='I play with my pets' scale='1'></CardRoutine>
+                  <CardRoutine time='12:30' text='I start the second block of classes' scale='10'></CardRoutine>
+                  <CardRoutine time='3:30' text='I finish classes' scale='10'></CardRoutine>
+                  <CardRoutine time='3:35' text='I eat meal with my family' scale='8'></CardRoutine>
+                  <CardRoutine time='4:15' text='I start doing homework' scale='5'></CardRoutine>
+                  <CardRoutine time='5:00' text='I code' scale='1'></CardRoutine>
+                  <CardRoutine time='6:00' text='I do exercise' scale='1'></CardRoutine>
+                  <CardRoutine time='8:00' text='I take dinner' scale='5'></CardRoutine>
+                  <CardRoutine time='9:00' text='I go to my martial arts class' scale='3'></CardRoutine>
+                </div>
+              </div>
+              <div className='title-des-special'>
+                Which choices do I make in my morning routine that might affect people’s opinions of me?
+              </div>
+              <div className='title-des' style={{ marginBottom: "20px" }}>
+                That I code a lot, and that I have a super strict time schedule.
+              </div>
+              <div className='title-des-special'>
+                What assumptions might someone make about my identity based on these choices?
+              </div>
+              <div className='title-des' style={{ marginBottom: "20px" }}>
+                People might think that I dont like social interaction because I code a lot. Thats far of the truth.
+              </div>
+              <div className='title-des-special'>
+                What might happen if I made different choices one morning? How could making a different choice in my hairstyle, fashion, or another aspect of my routine affect how people look at me?
+              </div>
+              <div className='title-des' style={{ marginBottom: "20px" }}>
+                If I stoped one day coding, my parents would believe that thier son is having trouble . . .
+              </div>
+              <div className='title-des-special'>
+                A time in my life when I concern about how I would be perceived by others affected a decision I made
+              </div>
+              <div className='title-des' style={{ marginBottom: "20px" }}>
+                When I was in Middle High School everyone knew I was the smartest guy in the school . . . so there were moments in which I took a decision
+                based on how people are going to see my academic success. Only for that, not my opinion.
+              </div>
+              <div className='title-des-special'>
+                Who are the people with whom I can be and show my truest self? Who am I when I am with them? In what ways do they give me confidence to just be me? . . .
+              </div>
+              <div className='title-des' style={{ marginBottom: "20px" }}>
+                My parents are the ones in which I trust the most.
+                I am super crazy when I am with them. I just can stop to talk :)
+                <br />
+                <br />
+                They give me confidence because they know we very well . . . they are not going to judge me.
+              </div>
+              <div className='title-des-special'>
+                What am I passionate about? How do the things I am passionate about help shape who I am?
+              </div>
+              <div className='title-des' style={{ marginBottom: "100px" }}>
+                I am passionate about technology.
+                <br />
+                <br />
+                I am not that stereotype of a nerd that like codign. I think my passion doesnt shape who I am.
+                In this case, I am a super athletic and social guy.
               </div>
             </Post>
             <Post
@@ -184,8 +281,65 @@ const App = () => {
               <div className='title-des-special'>
                 WHATS WRONG WITH THE WORLD? . . .
               </div>
-              <div className='title-des'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
+              <div className='title-des' style={{ marginBottom: "20px" }}>
+                These reflection is based on the movie "I AM":
+                <br />
+                At the start of the movie, I was thinking about how everything can change in just one second; all
+                your life, your health, your family, everything can change. That was deep to me because I faced
+                something like that. When I was younger a friend of my mother lost all his family in a car accident.
+                His wife, his three sons... in just one second. I learned from that story a lot. I learned that when we
+                die, we are not going to take everything we made for us. I am not going to die without doing
+                something special. If I die today, “06/09/2020”, what things that I did people are going to
+                remember? nothing… I am just an 18 years old boy. When I die the people are going to think, who
+                was him? First, I need to ask myself, who am I?
+              </div>
+              <img src="Images/iam.jpg" className='img-post' alt="Img Post" style={{ width: '75%' }} />
+              <div className='title-des' style={{ marginTop: "20px" }}>
+                With that in mind, I reflected a lot in the question that tom asked himself at the start of
+                the movie
+                <div style={{ marginBottom: "20px", marginTop: '20px', color: "var(--tertiary-color-light", textAlign: "left" }}>
+                  what is wrong with the world?
+                </div>
+                I realized that all the documentary was around of
+                <div style={{ marginBottom: "20px", marginTop: '20px', color: "var(--tertiary-color-light", textAlign: "left" }}>
+                  what is good with the world?
+                </div>
+                The world pays attention of what things you are doing and what things you are not doing,
+                what are normal behaviors. That is true because we live in a society, we are part of something
+                bigger. Like the ocean, the ocean is made of little drops of water. That is a culture. We are all
+                connected with our conscience.
+                <br />
+                <br />
+                Everyone is just looking for his own happiness… I thought like that before watching the
+                movie, but that is not true for me anymore. We are all connected, that is our true nature. The
+                nature is wise. A tree does not take all the soil for himself; it only takes what it needs. So, why are
+                there humans that accumulate and accumulate wealth? The answer is because we are in an
+                economy-based society. We do not respect culture as we used to do. Even though we are all
+                connected. What happened to me was just like the Ted Talk “The danger of a single story”. I
+                thought human nature was only war, or about thinking only of our own needs. Now, I know we are
+                part of something bigger and more special.
+                <br />
+                <br />
+                So, what does it take to change our minds? Because it helps that you can give support to a
+                homeless person that is near your house. But that does not change everything. Yes, it is a good
+                start point. But we are never going to change If we still think like that. I think the main question we
+                need to ask ourselves is: Who am I?
+                <br />
+                <br />
+                Like l started this essay, who am I? It is good if your meaning of life is helping people with
+                cancer. It is also good if your meaning is to be an entrepreneur that has millions, but millions
+                because it helps a country to develop. I think that in the movie Tom underestimate the actions of
+                millionaires. One day I saw an interview to a millionaire, and they asked him: “Does money buy
+                happiness?” And he answered, “Absolutely it does”. The interviewer was in shock. But then he
+                said, “I run the leading company in supporting developing countries in Africa. When my partners
+                show me videos of African people with books going to school thanks to my company, I cry… yes,
+                money really can buy happiness”. What he said is true.
+                <br />
+                <br />
+                I know I am a tiny part of a culture, a culture where everyone is important. I do not want
+                to do only a tiny bit, if the support is equivalent to grains of sand, I would like to put a whole
+                beach. To help people, to make peace, to be the change I want to see in the world. So, the most
+                important question to change our lives is “Who am I?”
               </div>
             </Post>
             <Post
@@ -197,7 +351,61 @@ const App = () => {
                 WHAT CULTURAL CHELLENGES I HAVE EXPERIENCED? . . .
               </div>
               <div className='title-des'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in?
+                First of all, culture has an impact in our gender, identity, values, habits, and our
+                behavior. Culture is a collective attribute of a group. How they behave, what they
+                think, what they like… what is good or bad…
+                <br />
+                <br />
+                Culture is basically a way of life. So, I can see its impact everywhere, really… it
+                includes beliefs, values, customs, traditions, heritage, etc.
+                Basically, we react based on our culture. Our behaviors are just normal for our
+                culture, nothing special. It is our way of living.
+                <br />
+                <br />
+                The main impact is that we think to perceive our personality as unique, but it is also
+                under the influence of culture. So, everybody is entangled with complex
+                interactions and we will carry this influence throughout our rest of our lives.
+                There is a cultural challenge that I faced. When I went to a National Swimming
+                Competition when I was 15 years old.
+                <br />
+                <br />
+                After the first day of competition, the Queretaro team was starting to do some
+                cultural things in the hotel. They start to cut the hair of every new Queretaro
+                competitor; I was one of them. Our coach forbade us to do that. But unfortunately,
+                my friends did, so I and other newies stayed up late trying to evade the hair clipper.
+                That made me unable to do well in the competition the next day.
+                <br />
+                <br />
+                This case was more awful for another guy. Something horrible happened to him
+                that I cannot tell, but that caused this kind of toxic culture to be canceled in
+                competitions.
+                <br />
+                <br />
+                This was not a very bad case for me. But this is the only thing that I faced in my
+                life. I struggled with the culture of my friends for a 2-week competition, not in my
+                entire life. But that was enough for me. I cannot imagine what many people need to
+                face forever.
+                <br />
+                <br />
+                There is also a cultural challenge that I faced that other people struggled because
+                of me. I went to SPACEX for a robotic competition when I was just 14 years old. I
+                went only with my friends, not with my parents. So, I needed to carry with myself.
+                In that trip I was competing with other children around the world. Some of them
+                were Indian people. The Indian people were against us in the first round.
+                We needed to make a strategy to pass as many rocks as we can from place A to
+                place B with a robot.
+                <br />
+                <br />
+                The Indian people were very good, but they did not have many friends as we did.
+                Because of their accent, they did not make a lot of friends. So, in the competition
+                round B we needed to make teams, we had an advantage because we were
+                friends of another team. The Indians had not a friend team. They were so
+                disorganized, so they lost.
+                <br />
+                <br />
+                I think this advantage we had was too low compare of another ones. But we really
+                knew that the Indians were the best, and they deserved to win. But they did not win
+                because of their culture, their language accent.
               </div>
             </Post>
           </div>
