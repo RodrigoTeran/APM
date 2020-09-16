@@ -1,0 +1,242 @@
+// Bootstrap
+@import "bootstrap";
+
+// Components
+@import "components/header";
+
+// Fonts
+@import "fonts/robotoCondensed";
+@import "fonts/ubuntu";
+
+// Buttons
+@import "components/Buttons/buttonWhite";
+
+* {
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+
+  background-color: rgba(25, 25, 25, 1);
+  color: #fff;
+}
+
+::selection {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+:root {
+  /*COLORS*/
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --tertiary-color: #ff7979;
+  --tertiary-color-light: #ff9f9f;
+}
+
+::-webkit-scrollbar {
+  width: 0.55em;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--tertiary-color);
+}
+::-webkit-scrollbar-track-piece {
+  background-color: white;
+}
+
+.skip-link {
+  /*BETTER HAVE SKIP LINK FOR USER EXPERIENCE*/
+  display: none;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+}
+
+button:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+}
+
+.blog {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(25, 25, 25, 1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &.closed {
+    clip-path: circle(0% at 50% 50vh);
+    transition: clip-path ease-in-out 0.8s;
+  }
+  &.open {
+    clip-path: circle(200% at 50% 50vh);
+    transition: clip-path ease-in-out 1s;
+  }
+}
+.row-header {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  .col-header {
+    flex-direction: column;
+    align-items: center;
+    &-2 {
+      &.fixed {
+        position: fixed;
+        top: 50px;
+        right: 2.5%;
+      }
+    }
+  }
+}
+.about-me {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: -13px;
+    left: calc(50% - 125px);
+    width: 250px;
+    height: 2px;
+    background: #fff;
+  }
+}
+.fotomia {
+  width: 250px;
+  border-radius: 50%;
+  margin-top: 30px;
+  &-des {
+    margin-top: 20px;
+  }
+}
+.date {
+  font-size: 0.8rem;
+  color: rgba(185, 185, 185, 1);
+}
+.title {
+  &-post {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: 20px;
+  }
+  &-des {
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1rem;
+    padding-bottom: 100px;
+  }
+}
+.img-post-1 {
+  background-image: url("/Images/fotomia.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+}
+.rodrigo {
+  margin-top: 50px;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: -13px;
+    left: calc(50% - 125px);
+    width: 250px;
+    height: 3px;
+    background: #fff;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .col-header-2,
+  .col-header-1 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .col-header-2 {
+    display: none;
+  }
+}
+.arrow {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 999;
+  svg {
+    fill: #fff;
+    cursor: pointer;
+  }
+}
+
+.nav-top-menu-bar {
+  &-icons {
+    &-button {
+      margin-left: 5px;
+      margin-right: 5px;
+      border-radius: 50%;
+      border: solid 3px #fff;
+      background-color: #fff;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: ease-in-out 0.3s;
+      padding: 0;
+      svg {
+        fill: var(--primary-color);
+        width: 90%;
+        height: 90%;
+      }
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          transform: translateY(-5px);
+          transition: ease-in-out 0.3s;
+        }
+      }
+    }
+  }
+}

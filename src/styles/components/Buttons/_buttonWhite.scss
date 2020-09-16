@@ -1,0 +1,64 @@
+.buttonWhiteStyles {
+  border-color: var(--secondary-color);
+  border-radius: 50px;
+  border-style: solid;
+  background-color: transparent;
+  position: relative;
+  color: var(--secondary-color);
+  margin-top: 30px;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-svg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        fill: #ffffff;
+      }
+    }
+    &-span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &::after {
+    position: absolute;
+    border-radius: 50px;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: transparent;
+    transition: ease-in-out 0.3s;
+    z-index: -1;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      transition: ease-in-out 0.3s;
+      color: var(--primary-color);
+
+      svg {
+        transition: ease-in-out 0.3s;
+        fill: #000000;
+      }
+    }
+
+    &:hover::after {
+      transition: ease-in-out 0.3s;
+      background-color: var(--secondary-color);
+      width: 100%;
+    }
+  }
+}
