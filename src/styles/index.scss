@@ -204,12 +204,38 @@ button {
     }
   }
 }
+.new-post {
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  color: var(--tertiary-color-light);
+  transition: ease-in-out 0.3s;
+  animation-name: anima_new_post;
+  animation-duration: 0.75s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+
+  @media (pointer: coarse) {
+    color: #fff;
+  }
+}
+@keyframes anima_new_post {
+  0% {
+    transform: scale(1) rotateZ(20deg);
+  }
+  100% {
+    transform: scale(1.3) rotateZ(20deg);
+  }
+}
 .img-post {
   &-1,
   &-2,
   &-3,
   &-4,
-  &-5 {
+  &-5,
+  &-6,
+  &-7,
+  &-8 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -264,6 +290,15 @@ button {
   }
   &-5 {
     background-image: url("/Images/culturalChallenges.jpg");
+  }
+  &-6 {
+    background-image: url("/Images/actor.jpg");
+  }
+  &-7 {
+    background-image: url("/Images/multi.jpg");
+  }
+  &-8 {
+    background-image: url("/Images/cultural.png");
   }
 }
 @media screen and (min-width: 701px) {
@@ -373,6 +408,7 @@ button {
   &-button {
     height: 100px;
     background-color: transparent;
+    position: relative;
     &-text {
       font-size: 1rem;
       font-weight: bold;
@@ -394,6 +430,10 @@ button {
     @media (hover: hover) and (pointer: fine) {
       &:hover {
         background-color: #ff7979;
+        .new-post {
+          color: #fff;
+          transition: ease-in-out 0.3s;
+        }
         .menu-button-text::after {
           left: 50%;
           width: 0;

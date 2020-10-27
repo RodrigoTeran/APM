@@ -7,7 +7,7 @@ import ButtonMenu from './components/Buttons/ButtonMenu';
 import CardRoutine from './components/CardRoutine';
 
 const App = () => {
-  const [start, setStart] = useState(false);
+  const [start, setStart] = useState(true);
   const openBlog = () => {
     setStart(true);
   };
@@ -59,15 +59,55 @@ const App = () => {
         <div className='rodrigo'>
           RODRIGO TERÁN HERNÁNDEZ
         </div>
-        <div className='menu row justify-content-center align-items-center'>
+        <div className='menu row justify-content-center align-items-center'
+          style={{ width: "90%" }}>
+          <ButtonMenu newPost={true} clickFunction={() => { putScroll('.img-post-8') }} text='CULTURAL NARRATIVES'></ButtonMenu>
+          <ButtonMenu newPost={true} clickFunction={() => { putScroll('.img-post-7') }} text='MULTICULTURALISM'></ButtonMenu>
+          <ButtonMenu newPost={true} clickFunction={() => { putScroll('.img-post-6') }} text='BECOMING AN ACTOR'></ButtonMenu>
           <ButtonMenu clickFunction={() => { putScroll('.img-post-1') }} text='MEANING OF MY NAME'></ButtonMenu>
           <ButtonMenu clickFunction={() => { putScroll('.img-post-2') }} text='SELFIE AND IDENTITY'></ButtonMenu>
           <ButtonMenu clickFunction={() => { putScroll('.img-post-3') }} text='IDENTITY AND CHOICES'></ButtonMenu>
           <ButtonMenu clickFunction={() => { putScroll('.img-post-4') }} text='I AM MOVIE REFLECTION '></ButtonMenu>
-          <ButtonMenu clickFunction={() => { putScroll('.img-post-5') }} text='CULTURAL CHELLENGES'></ButtonMenu>
+          <ButtonMenu clickFunction={() => { putScroll('.img-post-5') }} text='CULTURAL CHALLENGES'></ButtonMenu>
         </div>
         <div className='row row-header'>
           <div className="col-lg-7 col-md-12 col-sm-12 col-header col-header-1">
+            <Post
+              date='27/10/2020'
+              title='CULTURAL NARRATIVES'
+              img='img-post-8'
+            >
+              <div className='title-des-special'>
+                Life is not reduced to a single activity
+              </div>
+              <div className='title-des' style={{ marginBottom: '80px' }}>
+                Hola
+              </div>
+            </Post>
+            <Post
+              date='27/10/2020'
+              title='MULTICULTURALISM'
+              img='img-post-7'
+            >
+              <div className='title-des-special'>
+                Life is not reduced to a single activity
+              </div>
+              <div className='title-des' style={{ marginBottom: '80px' }}>
+                Hola
+              </div>
+            </Post>
+            <Post
+              date='27/10/2020'
+              title='BECOMING AN ACTOR'
+              img='img-post-6'
+            >
+              <div className='title-des-special'>
+                Life is not reduced to a single activity
+              </div>
+              <div className='title-des' style={{ marginBottom: '80px' }}>
+                Hola
+              </div>
+            </Post>
             <Post
               date='15/09/2020'
               title='THE MEANING OF MY NAME'
@@ -348,7 +388,7 @@ const App = () => {
               img='img-post-5'
             >
               <div className='title-des-special'>
-                WHAT CULTURAL CHELLENGES I HAVE EXPERIENCED? . . .
+                WHAT CULTURAL CHALLENGES I HAVE EXPERIENCED? . . .
               </div>
               <div className='title-des'>
                 First of all, culture has an impact in our gender, identity, values, habits, and our
@@ -417,18 +457,18 @@ const App = () => {
               </div>
               <div className='title-des' style={{ marginBottom: '80px' }}>
                 I am very surprised about what we have learned.
-                <br/>
-                <br/>
+                <br />
+                <br />
                 Because I never asked to myself "What I am?" or "Are we human?"
-                <br/>
-                <br/>
+                <br />
+                <br />
                 The classes are full with participation and I like to share my ideas.
-                <br/>
-                <br/>
+                <br />
+                <br />
                 Definitely a class that today is very important to have. It is important to develop critical thinking
                 and identity.
               </div>
-            </Post>       
+            </Post>
           </div>
           <div className={`col-lg-5 col-md-12 col-sm-12 col-header col-header-2 ${fixedCol ? ("fixed") : ("")}`}>
             <div className='about-me'>About Me</div>
