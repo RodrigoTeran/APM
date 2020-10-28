@@ -90,10 +90,36 @@ const App = () => {
               img='img-post-7'
             >
               <div className='title-des-special'>
-                Life is not reduced to a single activity
+                Multiculturalism and identity
+              </div>
+              <div className='title-des' style={{ marginBottom: '30px' }}>
+                This is a phrase that I wanto to reflect on:
+                <br />
+                "Things are only pure if you look at them from afar. It is very important to know our roots, to know where we come from, to know our history, but at the same time, as important as knowing where we are from is to understand that everyone, deep down, we are from nowhere at all and from all sides a bit "(Drexler, 2017).
+              </div>
+              <img src="Images/music.jpg" className='img-post' alt="Img Post" />
+              <div className='title-des' style={{ marginBottom: '10px', marginTop: "30px" }}>
+                So life is just not resumed in only one activty... Life is resumed in happinees and goals.
+              </div>
+              <div className='title-des-special'>
+                Do what you know and do it the best you can
+              </div>
+              <div className='title-des' style={{ marginBottom: '10px' }}>
+                When you do the activity which you are the best, people are going to admire you. You are going to have a meaninful life.
+                This is not about being rich, this is about making history.
+                This is a way to contribute to society.
+                <br />
+                For example, Bill Gates... when he was not stil one of the richest man on earth, his passion was computers, not money.
+                You needto contribute to society, as you wish... creating a song, writing a book, donate to poor people.
+                Do what fills up your hearth with joy.
+              </div>
+              <div className='title-des-special'>
+                Cultural expressions
               </div>
               <div className='title-des' style={{ marginBottom: '80px' }}>
-                Hola
+                Cultural expressions like theater, music, books, poems, etc. Are a key factor of society. They help to raise awareness.
+                Because sometimes a person doesnt realize what is happening in the society he is living, so the cultural expressions
+                are so important, to empower people, to maje concience of our reality.
               </div>
             </Post>
             <Post
@@ -104,8 +130,37 @@ const App = () => {
               <div className='title-des-special'>
                 Life is not reduced to a single activity
               </div>
+              <div className='title-des' style={{ marginBottom: '30px' }}>
+                Life is to short to just doing only one single thing...
+                <br></br>
+                Thats why the meaning of life is doing what makes you happy. When you grow up you interests change. You can explore many areas of interest.
+                <br />
+                People that now what they are doing are the ones that really have a long and meaningful life. The ones that now what are their passions.
+                People like that are called "visionaries". People that now why they are here in the world. They have a "vision"
+              </div>
+              <img src="Images/life.jpg" className='img-post' alt="Img Post" />
+              <div className='title-des' style={{ marginBottom: '10px', marginTop: "30px" }}>
+                So life is just not resumed in only one activty... Life is resumed in happinees and goals.
+              </div>
+              <div className='title-des-special'>
+                Do what you know and do it the best you can
+              </div>
+              <div className='title-des' style={{ marginBottom: '10px' }}>
+                When you do the activity which you are the best, people are going to admire you. You are going to have a meaninful life.
+                This is not about being rich, this is about making history.
+                This is a way to contribute to society.
+                <br />
+                For example, Bill Gates... when he was not stil one of the richest man on earth, his passion was computers, not money.
+                You needto contribute to society, as you wish... creating a song, writing a book, donate to poor people.
+                Do what fills up your hearth with joy.
+              </div>
+              <div className='title-des-special'>
+                Cultural expressions
+              </div>
               <div className='title-des' style={{ marginBottom: '80px' }}>
-                Hola
+                Cultural expressions like theater, music, books, poems, etc. Are a key factor of society. They help to raise awareness.
+                Because sometimes a person doesnt realize what is happening in the society he is living, so the cultural expressions
+                are so important, to empower people, to maje concience of our reality.
               </div>
             </Post>
             <Post
