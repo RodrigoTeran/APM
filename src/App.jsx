@@ -7,7 +7,7 @@ import ButtonMenu from './components/Buttons/ButtonMenu';
 import CardRoutine from './components/CardRoutine';
 
 const App = () => {
-  const [start, setStart] = useState(false);
+  const [start, setStart] = useState(true);
   const openBlog = () => {
     setStart(true);
   };
@@ -78,10 +78,26 @@ const App = () => {
               img='img-post-8'
             >
               <div className='title-des-special'>
-                Life is not reduced to a single activity
+                The way culture shapes society and society shapes culture
               </div>
-              <div className='title-des' style={{ marginBottom: '80px' }}>
-                Hola
+              <div className='title-des' style={{ marginBottom: '30px' }}>
+                Everything we do is based in our decisions, and our decisions are based from our culture.
+                <br />
+                This is true because we think we have the freedom to choose. That is a lie. Our decisions
+                are based from our culture, the way we speak, our religion, even our language, because it is the way
+                we feel and interact with the rest of the world.
+              </div>
+              <img src="Images/des1.jpg" className='img-post' alt="Img Post" />
+              <div className='title-des' style={{ marginBottom: '30px', marginTop: "30px" }}>
+                So, our decisions are shaped from our culture.
+                And our decisions shape society.
+                <br />
+                The society is based on people, a large quantity of people that have the same language,
+                traditions, ethincity, etc. that same way of thinking is a culture...
+              </div>
+              <img src="Images/des2.jpg" className='img-post' alt="Img Post" />
+              <div className='title-des' style={{ marginBottom: '80px', marginTop: "30px" }}>
+                So, this is a cycle. Everybody, as an individual shape society. And society also contributes to our decisions.
               </div>
             </Post>
             <Post
@@ -99,27 +115,17 @@ const App = () => {
               </div>
               <img src="Images/music.jpg" className='img-post' alt="Img Post" />
               <div className='title-des' style={{ marginBottom: '10px', marginTop: "30px" }}>
-                So life is just not resumed in only one activty... Life is resumed in happinees and goals.
+                Cultural identity might be seen like something special and unique but...
               </div>
               <div className='title-des-special'>
-                Do what you know and do it the best you can
-              </div>
-              <div className='title-des' style={{ marginBottom: '10px' }}>
-                When you do the activity which you are the best, people are going to admire you. You are going to have a meaninful life.
-                This is not about being rich, this is about making history.
-                This is a way to contribute to society.
-                <br />
-                For example, Bill Gates... when he was not stil one of the richest man on earth, his passion was computers, not money.
-                You needto contribute to society, as you wish... creating a song, writing a book, donate to poor people.
-                Do what fills up your hearth with joy.
-              </div>
-              <div className='title-des-special'>
-                Cultural expressions
+                We all are part of the same root
               </div>
               <div className='title-des' style={{ marginBottom: '80px' }}>
-                Cultural expressions like theater, music, books, poems, etc. Are a key factor of society. They help to raise awareness.
-                Because sometimes a person doesnt realize what is happening in the society he is living, so the cultural expressions
-                are so important, to empower people, to maje concience of our reality.
+                The human history is a vast and rich elements of combination of cultures. There is no human being in the planet that has 100% the characterstics
+                of a single culture. We need to recognize our own history. We all come from one place, Africa. We are the product of many cultures.
+                The ideas that of many cultures. The intelligence of tribes. The knowledge of societies. The power of nations. The idea of religion of many movements.
+                <br />
+                We are one single part of something bigger. But together we make our own history.
               </div>
             </Post>
             <Post
