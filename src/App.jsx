@@ -61,6 +61,7 @@ const App = () => {
         </div>
         <div className='menu row justify-content-center align-items-center'
           style={{ width: "90%" }}>
+          <ButtonMenu newPost={true} clickFunction={() => { putScroll('.img-post-9') }} text='CLASS REFLECTION'></ButtonMenu>
           <ButtonMenu newPost={true} clickFunction={() => { putScroll('.img-post-8') }} text='CULTURAL NARRATIVES'></ButtonMenu>
           <ButtonMenu newPost={true} clickFunction={() => { putScroll('.img-post-7') }} text='MULTICULTURALISM'></ButtonMenu>
           <ButtonMenu newPost={true} clickFunction={() => { putScroll('.img-post-6') }} text='BECOMING AN ACTOR'></ButtonMenu>
@@ -72,6 +73,65 @@ const App = () => {
         </div>
         <div className='row row-header'>
           <div className="col-lg-7 col-md-12 col-sm-12 col-header col-header-1">
+            <Post
+              date='28/10/2020'
+              title='CLASS REFLECTION'
+              img='img-post-9'
+            >
+              <div className='title-des-special'>
+                This is a reflection of what I learned in class
+              </div>
+              <div className='title-des' style={{ marginBottom: '30px' }}>
+                What I most like about the Multicultural Agents and Perspetcives class is that now I feel
+                more multicultural aware...
+                <br />
+                We work in an important proyect. This project was about to exchange perspectives and expand our global competence.
+                We decied to Interview two girls about the problem of gender inequality.
+              </div>
+              <div className='title-des-special'>
+                Ellie, she is from Singapore:
+              </div>
+              <img src="Images/ellie.png" className='img-post' alt="Img Post" />
+              <div className='title-des-special'>
+                And Isabela, she is from Brazil:
+              </div>
+              <img src="Images/isabelita.png" className='img-post' alt="Img Post" />
+
+              <div className='title-des' style={{ marginBottom: '30px', marginTop: "30px" }}>
+                It was important two have two different perspectives in this interview, so thats why the two girls
+                are from different places
+                <br />
+                Ellie has work in an organization calles days for girls.
+              </div>
+              <div className='title-des-special'>
+                DAYS FOR GIRLS:
+              </div>
+              <img src="Images/days.jpg" className='img-post' alt="Img Post" />
+
+              <div className='title-des' style={{ marginBottom: '30px', marginTop: "30px" }}>
+                And Isabela is a close friend of me. I know that Isabela is so aware of this challenges,
+                so I decided her.
+                <br />
+                This was what I created of my own research of this problem
+              </div>
+
+              <div className='title-des-special'>
+                DIAGRAM:
+              </div>
+              <img src="Images/venn.png" className='img-post' alt="Img Post" />
+
+              <div className='title-des-special' style={{ marginTop: "30px" }}>
+                Conclusion
+              </div>
+              <div className='title-des' style={{ marginBottom: '30px' }}>
+                Before doing this activity, I did not have a clear idea how this problem affects the world. How this problem affects the daily life of some girls in different cultures, with different perspectives. I did not have a clear whole observation. So, this activity filled that blank part that I had.
+                Now I have so much knowledge about this problem in some cultures. I know can develop an own idea of this challenge. I can develop some theories. And I can make a change because that is the main purpose.
+                The purpose was to exchange perspectives, to empathize and develop that multiculturalism. I developed that with this activity.
+                <br />
+                I really loved this class because it changes the way I approach challenges.
+              </div>
+              <img src="Images/faces.png" className='img-post' alt="Img Post" style={{ marginBottom: "80px" }} />
+            </Post>
             <Post
               date='27/10/2020'
               title='CULTURAL NARRATIVES'
