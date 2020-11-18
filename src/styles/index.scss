@@ -236,7 +236,9 @@ button {
   &-6,
   &-7,
   &-8,
-  &-9 {
+  &-9,
+  &-10,
+  &-11 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -304,6 +306,13 @@ button {
   &-9 {
     background-image: url("/Images/class.jpg");
   }  
+  &-10 {
+    background-image: url("/Images/multi-10.png");
+  }  
+  &-11 {
+    background-image: url("/Images/xd.jpg");
+  }  
+
 }
 @media screen and (min-width: 701px) {
   .img-post-2 {

@@ -61,10 +61,12 @@ const App = () => {
         </div>
         <div className='menu row justify-content-center align-items-center'
           style={{ width: "90%" }}>
-          <ButtonMenu newPost={true} clickFunction={() => { putScroll('.img-post-9') }} text='CLASS REFLECTION'></ButtonMenu>
-          <ButtonMenu newPost={true} clickFunction={() => { putScroll('.img-post-8') }} text='CULTURAL NARRATIVES'></ButtonMenu>
-          <ButtonMenu newPost={true} clickFunction={() => { putScroll('.img-post-7') }} text='MULTICULTURALISM'></ButtonMenu>
-          <ButtonMenu newPost={true} clickFunction={() => { putScroll('.img-post-6') }} text='BECOMING AN ACTOR'></ButtonMenu>
+          <ButtonMenu newPost={true} clickFunction={() => { putScroll('.img-post-11') }} text='FINAL REFLECTION'></ButtonMenu>
+          <ButtonMenu newPost={true} clickFunction={() => { putScroll('.img-post-10') }} text='FINAL ANALYSIS'></ButtonMenu>
+          <ButtonMenu clickFunction={() => { putScroll('.img-post-9') }} text='CLASS REFLECTION'></ButtonMenu>
+          <ButtonMenu clickFunction={() => { putScroll('.img-post-8') }} text='CULTURAL NARRATIVES'></ButtonMenu>
+          <ButtonMenu clickFunction={() => { putScroll('.img-post-7') }} text='MULTICULTURALISM'></ButtonMenu>
+          <ButtonMenu clickFunction={() => { putScroll('.img-post-6') }} text='BECOMING AN ACTOR'></ButtonMenu>
           <ButtonMenu clickFunction={() => { putScroll('.img-post-1') }} text='MEANING OF MY NAME'></ButtonMenu>
           <ButtonMenu clickFunction={() => { putScroll('.img-post-2') }} text='SELFIE AND IDENTITY'></ButtonMenu>
           <ButtonMenu clickFunction={() => { putScroll('.img-post-3') }} text='IDENTITY AND CHOICES'></ButtonMenu>
@@ -73,6 +75,30 @@ const App = () => {
         </div>
         <div className='row row-header'>
           <div className="col-lg-7 col-md-12 col-sm-12 col-header col-header-1">
+            <Post
+              date='18/11/2020'
+              title='FINAL REFLECTION'
+              img='img-post-11'
+            >
+              <div className='title-des-special'>
+                bla bla bla
+              </div>
+              <div className='title-des' style={{ marginBottom: '30px' }}>
+                bla bla bla
+              </div>
+            </Post>
+            <Post
+              date='18/11/2020'
+              title='MULTICULTURALISM AND HUMAN RIGHTS'
+              img='img-post-10'
+            >
+              <div className='title-des-special'>
+                What is my idea about multiculturalism and human rights?
+              </div>
+              <div className='title-des' style={{ marginBottom: '30px' }}>
+                bla bla bla
+              </div>
+            </Post>
             <Post
               date='28/10/2020'
               title='CLASS REFLECTION'
