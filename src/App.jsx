@@ -95,8 +95,46 @@ const App = () => {
               <div className='title-des-special'>
                 What is my idea about multiculturalism and human rights?
               </div>
-              <div className='title-des' style={{ marginBottom: '30px' }}>
-                bla bla bla
+              <div className='title-des' style={{ marginBottom: '10px' }}>
+                I really think that multiculturalism is something that is going to happen more than we are having it today.
+                So, been against it is not smart. Even though, I love multiculturalism.
+                <br />
+                <br />
+                I think I love multiculturalism because I am a very competitive person. But a lot. So, the idea of having to be outstanding here in Mexico,
+                in Canada, in USA or in any place I go. The idea that I can be everwhere and every people have the same opportunities as me. I love that.
+                <br />
+                <br />
+                I dont love the idea of only having to compete with Mexican people. I like to know other cultures and be with really smart and outstanding people.
+              </div>
+              <div className='title-des-special'>
+              I am a person that wants to learn a lot in his life. So, how can I learn if a avoid multiculturalism?
+              </div>
+              <div className='title-des' style={{ marginBottom: '10px' }}>
+                So, I respect every kind of thinking of any other culture.
+                <br/>
+                <br/>
+                Then, I believe that all human rights are for everyone... and this sound trivial, but there are people that does not know
+                what "human" is...
+                <br/>
+                <br/>
+                We are all human, a poor homeless Indian child is human, a rich and white boy in Los Angeles is human. All the humans are "humans".
+                Because we are all part of a society we need to respect each other.
+                Once I heard a friend that ask me this: "Why do I need to take ethics if I stydu engineering?"
+                And I said: "Because we live in a society..."
+                <br/>
+                <br/>
+                We cannot only focus in material things. We need to focus in every single detail in our lives.
+                Now, multiculturalism has a part in human rights. We all have the right to move to another country.
+              </div>
+              <div className='title-des-special'>
+                Conclusion
+              </div>
+              <div className='title-des' style={{ marginBottom: '80px' }}>
+                To conclude my opnion... I think that if we must advance as a society we need to promote competition. And we cannot achieve competition
+                by establishing barriers.
+                Nobody is going to loose privileges. That is false, because we are all going to have the same human rights.
+                I dont like to live in a society that first needs to ask where you come from to then give you rights.
+                If we are all global citizens, then we will achieve human rights for everyone.
               </div>
             </Post>
             <Post
